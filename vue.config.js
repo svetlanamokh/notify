@@ -1,0 +1,8 @@
+// site.com/modals/css/main.css
+module.exports = {
+    publicPath: process.env.NODE_ENV === 'production'
+        ? ''
+        : '/',
+    assetsDir: '',
+    productionSourceMap: false
+}
