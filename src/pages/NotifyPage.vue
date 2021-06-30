@@ -38,7 +38,7 @@ export default {
         preloader
     },
     mounted () {
-        this.$store.dispatch('getNotify')
+         this.gerNotifyShow ()
     },
     computed: {
         messages () {
@@ -53,6 +53,9 @@ export default {
     },
     methods: {
         reloadNotify () {
+            this.$store.dispatch('getNotify')
+        },
+        gerNotifyShow () {
             this.$store.dispatch('getNotify')
         }
     }
